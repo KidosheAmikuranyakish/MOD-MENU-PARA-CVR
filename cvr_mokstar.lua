@@ -129,7 +129,7 @@ function login(key, hwid)
     local password = "pizk*Hj12ji3"
     local database = "id21123488_cvr_mkstar"
 
-    -- Crie a conexão com o banco de dados
+    -- Cria uma conexão mysql
     local env = assert(luasql.mysql())
     local conn = assert(env:connect(database, user, password, host))
 
